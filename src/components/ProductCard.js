@@ -37,7 +37,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="group relative bg-jimdar-darker rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-scale-in">
+    <div className="group relative bg-jimdar-darker rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
       <Link to={`/product/${product.id}`}>
         <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-200">
           <img
@@ -61,14 +61,14 @@ const ProductCard = ({ product }) => {
             <div className="flex space-x-2">
               <button
                 onClick={handleAddToCart}
-                className="p-2 bg-jimdar-blue text-white rounded-full hover:bg-jimdar-light hover:text-jimdar-darker transition-all duration-300 transform hover:scale-110 hover:rotate-12 animate-smooth-scale"
+                className="p-2 bg-jimdar-blue text-white rounded-full hover:bg-jimdar-light hover:text-jimdar-darker transition-all duration-200 transform hover:scale-110"
                 title="Add to Cart"
               >
                 <ShoppingCart className="h-4 w-4" />
               </button>
               <button
                 onClick={handleToggleFavorite}
-                className={`p-2 rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-12 animate-smooth-scale ${
+                className={`p-2 rounded-full transition-all duration-200 transform hover:scale-110 ${
                   isFavorite(product.id)
                     ? 'bg-red-500 text-white'
                     : 'bg-gray-600 text-jimdar-light hover:bg-red-500 hover:text-white'

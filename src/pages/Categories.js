@@ -14,6 +14,7 @@ const Categories = () => {
     const categoryMatch = selectedCategory === 'all' || product.category === selectedCategory;
     const subcategoryMatch = selectedSubcategory === 'all' || product.subcategory === selectedSubcategory;
     const priceMatch = product.price >= priceRange[0] && product.price <= priceRange[1];
+    
     return categoryMatch && subcategoryMatch && priceMatch;
   });
 
@@ -144,15 +145,6 @@ const Categories = () => {
               <p className="text-jimdar-light">
                 Showing {sortedProducts.length} products
               </p>
-              <div className="flex items-center space-x-2">
-                <span className="text-jimdar-light">View:</span>
-                <button className="p-2 bg-jimdar-blue text-white rounded">
-                  Grid
-                </button>
-                <button className="p-2 bg-jimdar-darker text-jimdar-light rounded hover:bg-jimdar-blue hover:text-white">
-                  List
-                </button>
-              </div>
             </div>
 
             {/* Products Grid */}

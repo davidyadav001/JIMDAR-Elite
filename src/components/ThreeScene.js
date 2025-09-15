@@ -85,7 +85,7 @@ const ThreeScene = () => {
       {/* Overlay text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-center">
-          <h2 className="text-4xl md:text-6xl font-serif font-bold text-white mb-10 animate-float">
+          <h2 className="text-4xl md:text-6xl font-serif font-bold text-white mb-12 animate-float">
             JIMDAR Elite
           </h2>
           <p className="text-lg md:text-xl text-jimdar-light italic">

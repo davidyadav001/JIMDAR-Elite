@@ -1,4 +1,4 @@
-import { convertToNPR } from '../utils/currency';
+// Products with prices in Nepalese Rupees (NPR)
 
 export const categories = [
   {
@@ -18,12 +18,12 @@ export const categories = [
   },
   {
     id: 'tops-women',
-    name: 'Tops (Women)',
+    name: 'Formals (Women)',
     subcategories: ['Blouses', 'Tank Tops', 'Crop Tops']
   },
   {
-    id: 'mini-skirts',
-    name: 'Mini Skirts (Women)',
+    id: 'one-piece',
+    name: 'One Piece (Women)',
     subcategories: ['Denim', 'Leather', 'Cotton']
   },
   {
@@ -37,130 +37,218 @@ export const products = [
   // T-Shirts
   {
     id: 1,
-    name: 'Elite Classic Tee',
-    price: convertToNPR(89.99),
+    name: 'Classic Cotton T-Shirt',
+    price: 1999,
     category: 'tshirts',
     subcategory: 'Male',
-    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=600&fit=crop',
+    image: '/images/products/tshirts/t1.jpg',
     description: 'Premium cotton blend t-shirt with luxury finish',
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Black', 'White', 'Navy']
   },
   {
     id: 2,
-    name: 'Luxury V-Neck Tee',
-    price: convertToNPR(95.99),
+    name: 'V-Neck Casual T-Shirt',
+    price: 1599,
     category: 'tshirts',
     subcategory: 'Female',
-    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&h=600&fit=crop',
+    image: '/images/products/tshirts/t2.jpg',
     description: 'Elegant v-neck design with premium materials',
     sizes: ['XS', 'S', 'M', 'L'],
     colors: ['Black', 'White', 'Cream']
   },
   {
     id: 3,
-    name: 'Unisex Premium Tee',
-    price: convertToNPR(92.99),
+    name: 'Unisex Graphic T-Shirt',
+    price: 2299,
     category: 'tshirts',
     subcategory: 'Unisex',
-    image: 'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=500&h=600&fit=crop',
+    image: '/images/products/tshirts/t3.jpg',
     description: 'Versatile unisex design with modern fit',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Black', 'White', 'Gray']
+  },
+  {
+    id: 14,
+    name: 'Athletic Performance T-Shirt',
+    price: 1799,
+    category: 'tshirts',
+    subcategory: 'Male',
+    image: '/images/products/tshirts/t4.jpg',
+    description: 'High-performance sport t-shirt with premium comfort',
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Black', 'White', 'Navy', 'Gray']
   },
 
   // Formal Pants
   {
     id: 4,
-    name: 'Executive Dress Pants',
-    price: convertToNPR(189.99),
+    name: 'Classic Dress Trousers',
+    price: 4999,
     category: 'formal-pants',
     subcategory: 'Male',
-    image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop',
+    image: '/images/products/formal-pants/p1.jpg',
     description: 'Professional dress pants with perfect tailoring',
     sizes: ['30', '32', '34', '36', '38'],
     colors: ['Black', 'Navy', 'Charcoal']
   },
   {
     id: 5,
-    name: 'Elegant Trouser',
-    price: convertToNPR(179.99),
+    name: 'Professional Trousers',
+    price: 3999,
     category: 'formal-pants',
     subcategory: 'Female',
-    image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop',
+    image: '/images/products/formal-pants/p2.jpg',
     description: 'Sophisticated trousers for the modern professional',
     sizes: ['4', '6', '8', '10', '12'],
     colors: ['Black', 'Navy', 'Gray']
+  },
+  {
+    id: 20,
+    name: 'Luxury Dress Pants',
+    price: 6999,
+    category: 'formal-pants',
+    subcategory: 'Male',
+    image: '/images/products/formal-pants/p3.jpg',
+    description: 'Premium formal pants with luxury finish and perfect fit',
+    sizes: ['30', '32', '34', '36', '38'],
+    colors: ['Black', 'Navy', 'Charcoal', 'Gray']
   },
 
   // Jeans Pants
   {
     id: 6,
-    name: 'Premium Denim Jeans',
-    price: convertToNPR(149.99),
+    name: 'Classic Blue Jeans',
+    price: 11999,
     category: 'jeans-pants',
     subcategory: 'Male',
-    image: 'https://images.unsplash.com/photo-1542272604-787c13755354?w=500&h=600&fit=crop',
+    image: '/images/products/jeans-pants/j1.jpg',
     description: 'High-quality denim with perfect fit',
     sizes: ['30', '32', '34', '36', '38'],
     colors: ['Dark Blue', 'Light Blue', 'Black']
   },
   {
     id: 7,
-    name: 'Slim Fit Jeans',
-    price: convertToNPR(139.99),
+    name: 'Slim Fit Denim Jeans',
+    price: 3999,
     category: 'jeans-pants',
     subcategory: 'Female',
-    image: 'https://images.unsplash.com/photo-1542272604-787c13755354?w=500&h=600&fit=crop',
+    image: '/images/products/jeans-pants/j2.jpg',
     description: 'Stylish slim fit jeans for everyday elegance',
     sizes: ['24', '26', '28', '30', '32'],
+    colors: ['Dark Blue', 'Light Blue', 'Black']
+  },
+  {
+    id: 19,
+    name: 'Straight Cut Jeans',
+    price: 7999,
+    category: 'jeans-pants',
+    subcategory: 'Male',
+    image: '/images/products/jeans-pants/j3.jpg',
+    description: 'Classic straight fit jeans with timeless style',
+    sizes: ['30', '32', '34', '36', '38'],
     colors: ['Dark Blue', 'Light Blue', 'Black']
   },
 
   // Tops (Women)
   {
     id: 8,
-    name: 'Silk Blouse',
-    price: convertToNPR(199.99),
+    name: 'Elegant Silk Blouse',
+    price: 2999,
     category: 'tops-women',
     subcategory: 'Blouses',
-    image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop',
+    image: '/images/products/tops-women/wx.jpg',
     description: 'Luxurious silk blouse with elegant drape',
     sizes: ['XS', 'S', 'M', 'L'],
     colors: ['White', 'Black', 'Cream', 'Navy']
   },
   {
     id: 9,
-    name: 'Tank Top',
-    price: convertToNPR(79.99),
+    name: 'Casual Tank Top',
+    price: 2999,
     category: 'tops-women',
     subcategory: 'Tank Tops',
-    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&h=600&fit=crop',
+    image: '/images/products/tops-women/wx1.jpg',
     description: 'Comfortable and stylish tank top',
     sizes: ['XS', 'S', 'M', 'L'],
     colors: ['Black', 'White', 'Gray']
   },
+  {
+    id: 21,
+    name: 'Professional Blouse',
+    price: 3999,
+    category: 'tops-women',
+    subcategory: 'Blouses',
+    image: '/images/products/tops-women/wx3.jpg',
+    description: 'Elegant formal top with sophisticated design',
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'White', 'Navy', 'Gray']
+  },
 
-  // Mini Skirts
+  // One Piece
   {
     id: 10,
-    name: 'Leather Mini Skirt',
-    price: convertToNPR(249.99),
-    category: 'mini-skirts',
+    name: 'Leather One Piece',
+    price: 2499,
+    category: 'one-piece',
     subcategory: 'Leather',
-    image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop',
-    description: 'Bold leather mini skirt for statement looks',
+    image: '/images/products/one-piece/op1.jpg',
+    description: 'Bold leather one piece for statement looks',
     sizes: ['XS', 'S', 'M', 'L'],
     colors: ['Black', 'Brown', 'Red']
   },
   {
     id: 11,
-    name: 'Denim Mini Skirt',
-    price: convertToNPR(119.99),
-    category: 'mini-skirts',
+    name: 'Denim One Piece',
+    price: 5999,
+    category: 'one-piece',
     subcategory: 'Denim',
-    image: 'https://images.unsplash.com/photo-1542272604-787c13755354?w=500&h=600&fit=crop',
-    description: 'Classic denim mini skirt with modern cut',
+    image: '/images/products/one-piece/oa2.jpg',
+    description: 'Classic denim one piece with modern cut',
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Dark Blue', 'Light Blue', 'Black']
+  },
+  {
+    id: 15,
+    name: 'Elegant One Piece',
+    price: 3299,
+    category: 'one-piece',
+    subcategory: 'Cotton',
+    image: '/images/products/one-piece/o1.jpg',
+    description: 'Elegant cotton one piece with sophisticated design',
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'White', 'Navy']
+  },
+  {
+    id: 16,
+    name: 'Casual One Piece',
+    price: 2199,
+    category: 'one-piece',
+    subcategory: 'Cotton',
+    image: '/images/products/one-piece/o2.jpg',
+    description: 'Comfortable casual one piece for everyday wear',
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'White', 'Gray']
+  },
+  {
+    id: 17,
+    name: 'Premium One Piece',
+    price: 4299,
+    category: 'one-piece',
+    subcategory: 'Leather',
+    image: '/images/products/one-piece/o3.jpg',
+    description: 'Premium leather one piece with luxury finish',
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Brown', 'Red']
+  },
+  {
+    id: 18,
+    name: 'Designer One Piece',
+    price: 5499,
+    category: 'one-piece',
+    subcategory: 'Denim',
+    image: '/images/products/one-piece/oa1.jpg',
+    description: 'Designer denim one piece with unique styling',
     sizes: ['XS', 'S', 'M', 'L'],
     colors: ['Dark Blue', 'Light Blue', 'Black']
   },
@@ -169,10 +257,10 @@ export const products = [
   {
     id: 12,
     name: 'Cotton Boxers',
-    price: convertToNPR(39.99),
+    price: 3999,
     category: 'boxers-boys',
     subcategory: 'Cotton',
-    image: 'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=500&h=600&fit=crop',
+    image: '/images/products/boxers-boys/box1.jpg',
     description: 'Comfortable cotton boxers for everyday wear',
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Black', 'White', 'Navy', 'Gray']
@@ -180,10 +268,10 @@ export const products = [
   {
     id: 13,
     name: 'Silk Boxers',
-    price: convertToNPR(79.99),
+    price: 1999,
     category: 'boxers-boys',
     subcategory: 'Silk',
-    image: 'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=500&h=600&fit=crop',
+    image: '/images/products/boxers-boys/box 2.jpg',
     description: 'Luxurious silk boxers for premium comfort',
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Black', 'White', 'Navy']
