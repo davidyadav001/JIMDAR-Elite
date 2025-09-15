@@ -4,6 +4,7 @@ import { ArrowLeft, ShoppingCart, Heart, Star, Truck, Shield, RotateCcw } from '
 import { useCart } from '../context/CartContext';
 import { useFavorites } from '../context/FavoritesContext';
 import { getProductById } from '../data/products';
+import { formatNPR } from '../utils/currency';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -108,7 +109,7 @@ const ProductDetail = () => {
                 </div>
               </div>
               <p className="text-3xl font-bold text-jimdar-light">
-                ${product.price}
+                {formatNPR(product.price)}
               </p>
             </div>
 

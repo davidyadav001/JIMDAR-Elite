@@ -49,7 +49,7 @@ export const products = [
   {
     id: 2,
     name: 'V-Neck Casual T-Shirt',
-    price: 1599,
+    price: 2599,
     category: 'tshirts',
     subcategory: 'Female',
     image: '/images/products/tshirts/t2.jpg',
@@ -71,7 +71,7 @@ export const products = [
   {
     id: 14,
     name: 'Athletic Performance T-Shirt',
-    price: 1799,
+    price: 1999,
     category: 'tshirts',
     subcategory: 'Male',
     image: '/images/products/tshirts/t4.jpg',
@@ -84,7 +84,7 @@ export const products = [
   {
     id: 4,
     name: 'Classic Dress Trousers',
-    price: 4999,
+    price: 2999,
     category: 'formal-pants',
     subcategory: 'Male',
     image: '/images/products/formal-pants/p1.jpg',
@@ -95,7 +95,7 @@ export const products = [
   {
     id: 5,
     name: 'Professional Trousers',
-    price: 3999,
+    price: 2999,
     category: 'formal-pants',
     subcategory: 'Female',
     image: '/images/products/formal-pants/p2.jpg',
@@ -106,7 +106,7 @@ export const products = [
   {
     id: 20,
     name: 'Luxury Dress Pants',
-    price: 6999,
+    price: 2999,
     category: 'formal-pants',
     subcategory: 'Male',
     image: '/images/products/formal-pants/p3.jpg',
@@ -119,7 +119,7 @@ export const products = [
   {
     id: 6,
     name: 'Classic Blue Jeans',
-    price: 11999,
+    price: 3999,
     category: 'jeans-pants',
     subcategory: 'Male',
     image: '/images/products/jeans-pants/j1.jpg',
@@ -141,7 +141,7 @@ export const products = [
   {
     id: 19,
     name: 'Straight Cut Jeans',
-    price: 7999,
+    price: 3999,
     category: 'jeans-pants',
     subcategory: 'Male',
     image: '/images/products/jeans-pants/j3.jpg',
@@ -176,7 +176,7 @@ export const products = [
   {
     id: 21,
     name: 'Professional Blouse',
-    price: 3999,
+    price: 2999,
     category: 'tops-women',
     subcategory: 'Blouses',
     image: '/images/products/tops-women/wx3.jpg',
@@ -189,7 +189,7 @@ export const products = [
   {
     id: 10,
     name: 'Leather One Piece',
-    price: 2499,
+    price: 3499,
     category: 'one-piece',
     subcategory: 'Leather',
     image: '/images/products/one-piece/op1.jpg',
@@ -200,7 +200,7 @@ export const products = [
   {
     id: 11,
     name: 'Denim One Piece',
-    price: 5999,
+    price: 3399,
     category: 'one-piece',
     subcategory: 'Denim',
     image: '/images/products/one-piece/oa2.jpg',
@@ -211,7 +211,7 @@ export const products = [
   {
     id: 15,
     name: 'Elegant One Piece',
-    price: 3299,
+    price: 4999,
     category: 'one-piece',
     subcategory: 'Cotton',
     image: '/images/products/one-piece/o1.jpg',
@@ -222,7 +222,7 @@ export const products = [
   {
     id: 16,
     name: 'Casual One Piece',
-    price: 2199,
+    price: 3199,
     category: 'one-piece',
     subcategory: 'Cotton',
     image: '/images/products/one-piece/o2.jpg',
@@ -257,7 +257,7 @@ export const products = [
   {
     id: 12,
     name: 'Cotton Boxers',
-    price: 3999,
+    price: 1999,
     category: 'boxers-boys',
     subcategory: 'Cotton',
     image: '/images/products/boxers-boys/box1.jpg',
@@ -268,7 +268,7 @@ export const products = [
   {
     id: 13,
     name: 'Silk Boxers',
-    price: 1999,
+    price: 2199,
     category: 'boxers-boys',
     subcategory: 'Silk',
     image: '/images/products/boxers-boys/box 2.jpg',

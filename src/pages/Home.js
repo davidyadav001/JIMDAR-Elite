@@ -26,14 +26,19 @@ const Home = () => {
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center max-w-4xl mx-auto px-4">
             <div className="flex items-center justify-center mb-4">
-              <Crown className="h-8 w-8 text-yellow-400 mr-3 animate-bounce" />
-              <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-16 animate-fade-in bg-gradient-to-r from-white via-jimdar-light to-white bg-clip-text text-transparent">
-                JIMDAR Elite
-              </h1>
-              <Gem className="h-8 w-8 text-yellow-400 ml-3 animate-bounce delay-500" />
+              <Crown className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-400 mr-4 sm:mr-6 animate-bounce" />
+              <div className="relative">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white animate-fade-in bg-gradient-to-r from-white via-jimdar-light to-white bg-clip-text text-transparent leading-tight">
+                  JIMDAR Elite
+                </h1>
+                <p className="text-sm sm:text-base text-jimdar-light animate-fade-in font-serif italic absolute -bottom-6 right-0">
+                  Wear the Elite
+                </p>
+              </div>
+              <Gem className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-400 ml-4 sm:ml-6 animate-bounce delay-500" />
             </div>
 
-            <p className="text-xl md:text-2xl text-jimdar-light mb-12 animate-fade-in">
+            <p className="text-xl md:text-2xl text-jimdar-light mb-12 animate-fade-in mt-12 sm:mt-15">
               Discover luxury fashion that defines your elite status
             </p>
 
@@ -42,7 +47,7 @@ const Home = () => {
                 to="/categories"
                 className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-jimdar-light to-white text-jimdar-darker font-semibold rounded-lg hover:from-white hover:to-jimdar-light transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl"
               >
-                <Sparkles className="mr-2 h-5 w-5 group-hover:animate-spin" />
+                <Sparkles className="mr-3 h-6 w-6 group-hover:animate-spin" />
                 Explore Collection
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -120,10 +125,21 @@ const Home = () => {
       {/* Newsletter Section */}
       <section className="py-16 bg-jimdar-darker">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-serif font-bold text-white mb-4">Stay Elite</h2>
-          <p className="text-lg text-jimdar-light mb-8">
-            Subscribe to our newsletter for exclusive offers and early access to new collections
-          </p>
+          {/* Logo and Branding */}
+          <div className="flex flex-col items-center mb-2">
+            <div className="mb-2 rounded-lg overflow-hidden flex items-center justify-center bg-gradient-to-br from-jimdar-light/10 to-jimdar-blue/10 p-2" style={{width: '120px', height: '120px'}}>
+              <img 
+                src="/images/logos/logo.png" 
+                alt="JIMDAR Elite Logo" 
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <h2 className="text-3xl font-serif font-bold text-white mb-2">Stay Elite</h2>
+            <p className="text-lg text-jimdar-light">
+              Subscribe to our newsletter for exclusive offers and early access to new collections
+            </p>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input
               type="email"
