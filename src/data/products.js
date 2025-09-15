@@ -83,7 +83,7 @@ export const products = [
   },
   {
     id: 5,
-    name: 'Elegant Trousers',
+    name: 'Elegant Trouser',
     price: convertToNPR(179.99),
     category: 'formal-pants',
     subcategory: 'Female',
