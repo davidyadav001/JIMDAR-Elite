@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 const PageTransition = ({ children }) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [displayChildren, setDisplayChildren] = useState(children);
-  const location = useLocation();
 
   useEffect(() => {
     if (children !== displayChildren) {
